@@ -1,2 +1,2 @@
 #!/bin/bash
-cat 6-iacta | awk 'NR==3'
+head -n 3
