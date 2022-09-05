@@ -1,2 +1,2 @@
 #!/bin/bash
-cat 6-third_file | awk 'NR==3'
+cat 6-iacta | awk 'NR==3'
