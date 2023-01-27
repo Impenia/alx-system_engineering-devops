@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "What is is your git commit message?:"
+read git_commit_message
+
+git add -A
+git commit -m "$git_commit_message"
+
+echo "What is your push branc?:"
+read gitbranch
+
+git push origin $gitbranch

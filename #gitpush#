@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "What is is your git commit message?:"
+read git_commit_message
+
+git add -A
+git commit -m "$git_commit_message"
+
+echo "What is the push branch?:"
+echo "type 0 if branch if branch is main or master"
+read branch_name
+
+if [ $branch_name -eq 0 ]
+then
+    git push origin master
+else
+    git push origin $branch_name
+fi
