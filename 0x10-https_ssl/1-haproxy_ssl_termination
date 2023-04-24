@@ -17,7 +17,7 @@ frontend impenia-tech-frontend
 	http-request set-header X-Forwarded-Proto https
 	default_backend impenia-tech-backend
 
-backend th3gr00t-tech-backend
+backend impenia-tech-backend
 	balance roundrobin
 	server 153795-web-01 100.25.146.60:80 check
 	server 153795-web-02 54.152.198.128:80 check
