@@ -10,12 +10,12 @@ defaults
 	timeout client  30s
 	timeout server  30s
 
-frontend th3gr00t-tech-frontend
+frontend impenia-tech-frontend
 	bind *:80
-	bind *:443 ssl crt /etc/haproxy/certs/th3gr00t.tech.pem
+	bind *:443 ssl crt /etc/haproxy/certs/impenia.tech.pem
 	http-request redirect scheme https unless { ssl_fc }
 	http-request set-header X-Forwarded-Proto https
-	default_backend th3gr00t-tech-backend
+	default_backend impenia-tech-backend
 
 backend th3gr00t-tech-backend
 	balance roundrobin
